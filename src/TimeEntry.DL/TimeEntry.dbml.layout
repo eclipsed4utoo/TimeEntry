@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TimeEntry">
+  <DataContextMoniker Name="/TimeEntryDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3da19ae7-13bb-475f-be78-2f36fbf3e2e4" absoluteBounds="0.75, 2.375, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/TimeEntryDataContext/Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8df95d1f-a2e5-4b2f-8411-123259d6c351" absoluteBounds="0.765, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80973417-a70a-4424-848e-5337599b670c" absoluteBounds="4.625, 6.5, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/TimeEntryDataContext/TimeEntry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fdbb34d-bd82-48fb-969d-33b19e808e1b" absoluteBounds="4.64, 6.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17996c2b-aef3-412c-b856-d68061876e2e" absoluteBounds="2.375, 4.5, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/TimeEntryDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e8f168c-9043-44ae-a3bc-69a264596326" absoluteBounds="2.39, 4.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 5.8862939453125); (4.625 : 6.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TimeEntryDataContext/Task/Task_TimeEntry" />
+      <nodes>
+        <classShapeMoniker Id="17996c2b-aef3-412c-b856-d68061876e2e" />
+        <classShapeMoniker Id="80973417-a70a-4424-848e-5337599b670c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5625 : 3.56899251302083); (2.5625 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TimeEntryDataContext/Company/Company_Task" />
+      <nodes>
+        <classShapeMoniker Id="3da19ae7-13bb-475f-be78-2f36fbf3e2e4" />
+        <classShapeMoniker Id="17996c2b-aef3-412c-b856-d68061876e2e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
